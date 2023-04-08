@@ -1,137 +1,193 @@
 <!DOCTYPE html>
+<!-- tell the browser that this is an HTML5 document -->
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Tourism in Malaysia</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- specify the language of the document -->
 
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+<head>
+  <meta charset="utf-8" />
+  <title>Tourism in Malaysia</title>
+  <!-- give a title to the document -->
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- make the document responsive to different screen sizes -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
 
-    <link rel="icon" href="/favicon.ico" sizes="any" />
-    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="icon.png" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="icon.png" />
 
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
-    <link rel="manifest" href="site.webmanifest" />
-    <meta name="theme-color" content="#fafafa" />
-  </head>
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#fafafa" />
+</head>
 
-  <body>
-    <header>
-      <h1>Welcome to my tourism website</h1>
-      <nav>
-        <ul>
-          <li><a href="#main">Main</a></li>
-          <li><a href="#table">Table</a></li>
-          <li><a href="#form">Form</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <article id="main">
-        <!-- use article tags for independent and self-contained pieces of content -->
-        <h2>This website is about tourism in Malaysia.</h2>
-        <!-- use heading elements as the first child of each article -->
-        <p>
-          <img
-            src="malaysia.svg"
-            alt="A map of Malaysia with its states and capital city"
-            width="300"
-            height="200"
-          />
-        </p>
-        <!-- use img tags with alt attributes for images that are supplementary to the text -->
-        <p>
-          Malaysia is a country in Southeast Asia with 13 states and three
-          federal territories.
-        </p>
-        <!-- use p tags for paragraphs -->
-      </article>
-      <article id="table">
-        <h2>Some popular tourist attractions in Malaysia</h2>
-        <table>
-          <caption>
-            A list of three popular tourist attractions in Malaysia with their
-            names, locations, and descriptions.
-          </caption>
-          <!-- use caption tags for table titles -->
-          <thead>
-            <tr>
-              <th>Name</th>
-              <!-- use th tags for table headers -->
-              <th>Location</th>
-              <th>Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Petronas Twin Towers</td>
-              <!-- use td tags for table data -->
-              <td>Kuala Lumpur</td>
-              <td>The tallest twin towers in the world.</td>
-            </tr>
-            <tr>
-              <td>Mount Kinabalu</td>
-              <td>Sabah</td>
-              <td>The highest mountain in Malaysia and Southeast Asia.</td>
-            </tr>
-            <tr>
-              <td>Langkawi Island</td>
-              <td>Kedah</td>
-              <td>A warm island with nice sand and plants.</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td colspan="3">Source: Wikipedia</td>
-              <!-- use colspan to span multiple columns -->
-            </tr>
-          </tfoot>
-        </table>
-      </article>
-      <article id="form">
-        <h2>Contact me</h2>
-        <form action="https://example.com/action_page.php" method="post">
-          <!-- use an absolute URL for the action attribute -->
-          <input type="hidden" name="csrf_token" value="random_string" />
-          <!-- use a hidden input for the CSRF token -->
-          <label for="name">Name:</label>
-          <!-- use label elements for form labels -->
-          <input type="text" id="name" name="name" required />
-          <!-- use required attribute for mandatory fields -->
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-          <label for="message">Message:</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="4"
-            cols="50"
-            required
-          ></textarea>
-          <label for="captcha">Please enter the text below:</label>
-          <img
-            src="captcha.png"
-            alt="A captcha image with some distorted text"
-          />
-          <!-- use an image with an alt attribute for the captcha -->
-          <input type="text" id="captcha" name="captcha" required />
-          <input type="hidden" id="honeypot" name="honeypot" />
-          <!-- use a hidden input for the honeypot technique -->
-          <button type="submit">Submit</button>
-          <!-- use a button element for the submit button -->
-        </form>
-      </article>
+<body>
+  <header>
+    <h1>Welcome to my tourism website</h1>
+    <nav>
+      <ul>
+        <li><a href="#main">Main</a></li>
+        <li><a href="#table">Table</a></li>
+        <li><a href="#form">Form</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article id="main">
+      <!-- use article tags for independent and self-contained pieces of content -->
+      <h2>This website is about tourism in Malaysia.</h2>
+      <!-- use heading elements as the first child of each article -->
+      <p>
+        <img src="malaysia.svg" alt="A map of Malaysia with its states and capital city" width="300" height="200" />
+      </p>
+      <!-- use img tags with alt attributes for images that are supplementary to the text -->
+      <p>
+        <video width="640" height="360" controls preload="metadata">
+          <source src="tourism-malaysia.mp4" type="video/mp4"
+            alt="A travel video showcasing 10 best places to visit in Malaysia." />
+          <source src="tourism-malaysia.webm" type="video/webm"
+            alt="A travel video showcasing 10 best places to visit in Malaysia." />
+          <source src="tourism-malaysia.ogg" type="video/ogg"
+            alt="A travel video showcasing 10 best places to visit in Malaysia." />
+          <track kind="subtitles" src="tourism-malaysia-en.vtt" srclang="en" label="English" default />
+          <track kind="subtitles" src="tourism-malaysia-ms.vtt" srclang="ms" label="Malay" />
+          Your browser does not support the video element.
+        </video>
+      </p>
+      <!-- use video tags for video files -->
+      <p>
+        <audio controls preload="metadata">
+          <source src="tourism-malaysia.mp3" type="audio/mpeg"
+            alt="An introduction to Malaysia as a preferred tourism destination." />
+          <source src="tourism-malaysia.ogg" type="audio/ogg"
+            alt="An introduction to Malaysia as a preferred tourism destination." />
+          <source src="tourism-malaysia.wav" type="audio/wav"
+            alt="An introduction to Malaysia as a preferred tourism destination." />
+          Your browser does not support the audio element.
+        </audio>
+      </p>
+      <!-- use audio tags for audio files -->
+      <p>
+        Malaysia is a country in Southeast Asia with 13 states and three
+        federal territories.
+      </p>
+      <!-- use p tags for paragraphs -->
+    </article>
+    <article id="table">
+      <h2>Some popular tourist attractions in Malaysia</h2>
+      <table>
+        <caption>
+          A list of three popular tourist attractions in Malaysia with their
+          names, locations, and descriptions.
+        </caption>
+        <!-- use caption tags for table titles -->
+        <thead>
+          <tr>
+            <th>Name</th>
+            <!-- use th tags for table headers -->
+            <th>Location</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Petronas Twin Towers</td>
+            <!-- use td tags for table data -->
+            <td>Kuala Lumpur</td>
+            <td>The tallest twin towers in the world.</td>
+          </tr>
+          <tr>
+            <td>Mount Kinabalu</td>
+            <td>Sabah</td>
+            <td>The highest mountain in Malaysia and Southeast Asia.</td>
+          </tr>
+          <tr>
+            <td>Langkawi Island</td>
+            <td>Kedah</td>
+            <td>A warm island with nice sand and plants.</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Source: Wikipedia</td>
+            <!-- use colspan to span multiple columns -->
+          </tr>
+        </tfoot>
+      </table>
+    </article>
+    <article id="form">
+      <h2>Contact me</h2>
+      <form id="contact-form" action="https://example.com/action_page.py" method="post" enctype="multipart/form-data"
+        autocomplete="on" rel="external noopener noreferrer" onsubmit="return validateForm()">
+        <!-- use an onsubmit attribute to call a JavaScript function that validates the form before submission -->
+        <fieldset>
+          <legend>Contact Information</legend>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="John Doe" aria-required="true" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="john.doe@example.com"
+              aria-required="true" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"
+              aria-describedby="phone-format" />
+            <span id="phone-format" class="help-text">Format: 123-456-7890</span>
+          </div>
+          <div class="form-group">
+            <label for="attachment">Attachment:</label>
+            <input type="file" id="attachment" name="attachment" accept=".pdf,.doc,.docx" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Message Details</legend>
+          <div class="form-group">
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject" required aria-required="true">
+              <option value="" disabled selected hidden>
+                Please select a subject
+              </option>
+              <option value="feedback">Feedback</option>
+              <option value="inquiry">Inquiry</option>
+              <option value="complaint">Complaint</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50" required placeholder="Your message here"
+              aria-required="true"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="captcha">Please enter the text below:</label>
+            <img src="/captcha.png?refresh=1" alt="A captcha image with some distorted text" />
+            <!-- use a query string parameter to make the captcha image refreshable -->
+            <button type="button" onclick="refreshCaptcha()">Refresh</button>
+            <!-- use a button element with a type=button and an onclick attribute to call a JavaScript function that refreshes the captcha image -->
+            <input type="text" id="captcha" name="captcha" required />
+            <!-- use a custom attribute to store the correct answer of the captcha -->
+            <!-- use a hidden input for the honeypot technique -->
+          </div>
+        </fieldset>
+        <!-- use a div element with a class attribute to group the form actions -->
+        <!-- use a button element with a type=submit for the submit button -->
+        <!-- use a button element with a type=reset for the reset button -->
+        <!-- use an output element to display a confirmation message after the form is submitted -->
+      </form>
+    </article>
 
-      <!-- close all tags properly -->
-    </main>
-    <script src="js/vendor/modernizr-3.12.0.min.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+    <!-- close all tags properly -->
+  </main>
+  <script src="js/vendor/modernizr-3.12.0.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
 </html>
