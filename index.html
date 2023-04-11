@@ -1,281 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="The best website about tourism in Malaysia using every HTML tag"
-    />
-    <meta name="keywords" content="Malaysia, tourism, travel, HTML" />
-    <meta name="author" content="Your Name" />
-    <title>Tourism Website - Malaysia</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="malaysia-flag.ico" type="image/x-icon" />
-    <link
-      rel="alternate"
-      href="rss.xml"
-      type="application/rss+xml"
-      title="RSS Feed"
-    />
-    <script src="script.js"></script>
-  </head>
+<!-- tell the browser that this is an HTML5 document -->
+<html class="no-js" lang="en">
+<!-- specify the language of the document -->
 
-  <body>
-    <header>
-      <h1>Tourism Website - Malaysia</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#destinations">Destinations</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main id="home">
-      <section>
-        <h2>Welcome to Tourism Website - Malaysia</h2>
-        <p>
-          This website is designed to help you plan your next trip to Malaysia.
-          You can find information about various destinations, attractions,
-          activities, and more. Whether you are looking for a relaxing vacation
-          or an adventurous one, we have something for you.
-        </p>
-        <figure>
-          <img
-            src="banner.jpg"
-            alt="A scenic view of a lake and mountains in Malaysia"
-          />
-          <figcaption>
-            A scenic view of a lake and mountains in Malaysia
-          </figcaption>
-        </figure>
-      </section>
-      <section id="about">
-        <h2>About Us</h2>
-        <p>
-          We are a team of travel enthusiasts who love to explore new places and
-          share our experiences with others. We have visited many countries and
-          regions around the world and have learned a lot about different
-          cultures, cuisines, and lifestyles. We want to inspire you to travel
-          more and discover the beauty of Malaysia.
-        </p>
-        <figure>
-          <img src="team.jpg" alt="A group photo of our team members smiling" />
-          <figcaption>A group photo of our team members smiling</figcaption>
-        </figure>
-      </section>
-      <section id="destinations">
-        <h2>Popular Destinations in Malaysia</h2>
-        <p>
-          Here are some of the most popular destinations that our customers have
-          enjoyed visiting in Malaysia. You can click on each destination to
-          learn more about it and see some photos.
-        </p>
-        <dl>
-          <dt><a href="kualalumpur.html">Kuala Lumpur</a></dt>
-          <dd>
-            The capital city of Malaysia, Kuala Lumpur is a vibrant and modern
-            metropolis with skyscrapers, shopping malls, museums, parks, and
-            more.
-          </dd>
+<head>
+  <meta charset="utf-8">
+  <title>Tourism in Malaysia</title>
+  <!-- give a title to the document -->
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- make the document responsive to different screen sizes -->
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
 
-          <dt><a href="penang.html">Penang</a></dt>
-          <dd>
-            An island state in the northwest of Malaysia, Penang is known for
-            its rich cultural heritage, diverse cuisine, street art, and
-            beaches.
-          </dd>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
 
-          <dt><a href="langkawi.html">Langkawi</a></dt>
-          <dd>
-            A group of 99 islands in the Andaman Sea, Langkawi is a popular
-            destination for nature lovers, with rainforests, waterfalls,
-            wildlife, and marine life.
-          </dd>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 
-          <dt><a href="malacca.html">Malacca</a></dt>
-          <dd>
-            A historic city in the southwest of Malaysia, Malacca is famous for
-            its colonial architecture, multicultural influences, and local
-            delicacies.
-          </dd>
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
 
-          <dt><a href="sabah.html">Sabah</a></dt>
-          <dd>
-            A state in the northeast of Borneo island, Sabah is home to Mount
-            Kinabalu, the highest peak in Southeast Asia, as well as diverse
-            ecosystems and wildlife.
-          </dd>
-          <dt><a href="sarawak.html">Sarawak</a></dt>
-          <dd>
-            A state in the northwest of Borneo island, Sarawak is known for its
-            diverse ethnic groups, cultural festivals, caves, national parks,
-            and wildlife sanctuaries.
-          </dd>
-
-          <dt><a href="perhentian.html">Perhentian Islands</a></dt>
-          <dd>
-            A pair of islands in the east coast of Malaysia, Perhentian Islands
-            are a paradise for snorkeling, diving, kayaking, and relaxing on the
-            white sandy beaches.
-          </dd>
-
-          <dt><a href="cameron.html">Cameron Highlands</a></dt>
-          <dd>
-            A highland region in the center of Malaysia, Cameron Highlands are
-            famous for their tea plantations, strawberry farms, flower gardens,
-            and cool climate.
-          </dd>
-
-          <dt><a href="tioman.html">Tioman Island</a></dt>
-          <dd>
-            An island in the South China Sea, Tioman Island is a popular
-            destination for scuba diving, surfing, hiking, and enjoying the
-            tropical scenery.
-          </dd>
-        </dl>
-      </section>
-
-      <!-- More sections here -->
-    </main>
-
-    <!-- More main content here -->
-
-    <!-- Some other HTML tags that are not used yet -->
-
-    <aside>
-      <h3>Latest News</h3>
+<body>
+  <header role="banner">
+    <h1>Welcome to my tourism website</h1>
+    <nav role="navigation" aria-label="Main navigation">
       <ul>
-        <li>
-          <time datetime="2022-01-01">Jan 1, 2022</time>: Happy New Year! Check
-          out our special offers for 2022.
-        </li>
-        <li>
-          <time datetime="2021-12-25">Dec 25, 2021</time>: Merry Christmas! We
-          wish you a wonderful holiday season.
-        </li>
-        <li>
-          <time datetime="2021-12-01">Dec 1, 2021</time>: We have updated our
-          website with more destinations and features.
-        </li>
+        <li><a href="#main">Main</a></li>
+        <li><a href="#table">Table</a></li>
+        <li><a href="#form">Form</a></li>
       </ul>
-    </aside>
-
-    <article>
-      <header>
-        <h3>How to Plan Your Trip to Malaysia</h3>
-        <p>By Your Name on Jan 15, 2022</p>
-      </header>
-      <p>
-        Malaysia is a beautiful and diverse country that offers something for
-        everyone. Whether you are looking for culture, nature, adventure, or
-        relaxation, you will find it here. However, planning a trip to Malaysia
-        can be overwhelming if you don't know where to start. Here are some tips
-        to help you plan your trip to Malaysia.
-      </p>
-      <ol>
-        <li>
-          Decide when to go. Malaysia has a tropical climate with hot and humid
-          weather all year round. However, there are some variations depending
-          on the region and season. The west coast of Peninsular Malaysia is
-          generally dry from November to February and wet from May to October.
-          The east coast of Peninsular Malaysia and the islands of Sabah and
-          Sarawak are generally dry from March to October and wet from November
-          to February. The best time to visit Malaysia depends on your
-          preferences and activities.
-        </li>
-        <li>
-          Decide where to go. Malaysia has a lot of attractions and destinations
-          to choose from. You can visit the bustling capital city of Kuala
-          Lumpur, the historic city of Malacca, the cultural island of Penang,
-          the scenic highlands of Cameron or Genting, the tropical islands of
-          Langkawi or Tioman, the wildlife-rich states of Sabah or Sarawak, and
-          more. You can also combine different regions and islands to get a
-          taste of everything. However, you should also consider your budget,
-          time, and interests when deciding where to go.
-        </li>
-        <li>
-          Book your flights and accommodation. Once you have decided when and
-          where to go, you can start booking your flights and accommodation. You
-          can use online platforms such as Skyscanner or Expedia to compare
-          prices and options for flights and hotels. You can also use Airbnb or
-          Booking.com to find alternative accommodation such as apartments or
-          homestays. You should book your flights and accommodation as early as
-          possible to get the best deals and availability.
-        </li>
-        <li>
-          Plan your itinerary and activities. After booking your flights and
-          accommodation, you can start planning your itinerary and activities.
-          You can use online resources such as TripAdvisor or Lonely Planet to
-          find out what to see and do in each destination. You can also use
-          Google Maps or Maps.me to plan your routes and transportation. You
-          should also check the weather forecast and local events before you go.
-        </li>
-        <li>
-          Pack your essentials and enjoy your trip. Finally, you can pack your
-          essentials and get ready for your trip. You should pack light and
-          bring only what you need. Some of the essentials you should bring are
-          your passport, visa, flight tickets, accommodation confirmation,
-          travel insurance, money, credit cards, phone, charger, adapter,
-          camera, sunscreen, insect repellent, hat, sunglasses, umbrella,
-          raincoat, clothes, shoes, toiletries, medications, and a copy of your
-          itinerary. You should also check the customs and immigration
-          regulations of Malaysia before you go. Once you have everything ready,
-          you can enjoy your trip to Malaysia and have a wonderful time.
-        </li>
-      </ol>
-      <footer>
+    </nav>
+    <main>
+      <article id="main">
+        <!-- use article tags for independent and self-contained pieces of content -->
+        <h2>This website is about tourism in Malaysia.</h2>
+        <!-- use heading elements as the first child of each article -->
         <p>
-          If you liked this article, please share it with your friends and leave
-          a comment below.
+          <img src="malaysia.svg" alt="A map of Malaysia with its states and capital city" width="300" height="200" />
         </p>
-      </footer>
-    </article>
+        <!-- use img tags with alt attributes for images that are supplementary to the text -->
+        <p>
+          <video width="640" height="360" controls preload="metadata">
+            <source src="tourism-malaysia.mp4" type="video/mp4"
+              alt="A travel video showcasing 10 best places to visit in Malaysia." />
+            <source src="tourism-malaysia.webm" type="video/webm"
+              alt="A travel video showcasing 10 best places to visit in Malaysia." />
+            <source src="tourism-malaysia.ogg" type="video/ogg"
+              alt="A travel video showcasing 10 best places to visit in Malaysia." />
+            <track kind="subtitles" src="tourism-malaysia-en.vtt" srclang="en" label="English" default />
+            <track kind="subtitles" src="tourism-malaysia-ms.vtt" srclang="ms" label="Malay" />
+            Your browser does not support the video element.
+          </video>
+        </p>
+        <!-- use video tags for video files -->
+        <p>
+          <audio controls preload="metadata">
+            <source src="tourism-malaysia.mp3" type="audio/mpeg"
+              alt="An introduction to Malaysia as a preferred tourism destination." />
+            <source src="tourism-malaysia.ogg" type="audio/ogg"
+              alt="An introduction to Malaysia as a preferred tourism destination." />
+            <source src="tourism-malaysia.wav" type="audio/wav"
+              alt="An introduction to Malaysia as a preferred tourism destination." />
+            Your browser does not support the audio element.
+          </audio>
+        </p>
+        <!-- use audio tags for audio files -->
+        <p>
+          Malaysia is a country in Southeast Asia with 13 states and three
+          federal territories.
+        </p>
+        <!-- use p tags for paragraphs -->
+      </article>
+      <article id="table">
+        <h2>Some popular tourist attractions in Malaysia</h2>
+        <table>
+          <caption>
+            A list of three popular tourist attractions in Malaysia with their
+            names, locations, and descriptions.
+          </caption>
+          <!-- use caption tags for table titles -->
+          <thead>
+            <tr>
+              <th>Name</th>
+              <!-- use th tags for table headers -->
+              <th>Location</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Petronas Twin Towers</td>
+              <!-- use td tags for table data -->
+              <td>Kuala Lumpur</td>
+              <td>The tallest twin towers in the world.</td>
+            </tr>
+            <tr>
+              <td>Mount Kinabalu</td>
+              <td>Sabah</td>
+              <td>The highest mountain in Malaysia and Southeast Asia.</td>
+            </tr>
+            <tr>
+              <td>Langkawi Island</td>
+              <td>Kedah</td>
+              <td>A warm island with nice sand and plants.</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">Source: Wikipedia</td>
+              <!-- use colspan to span multiple columns -->
+            </tr>
+          </tfoot>
+        </table>
+      </article>
+      <article id="form">
+        <h2>Contact me</h2>
+        <form id="contact-form" action="https://example.com/action_page.py" method="post" enctype="multipart/form-data"
+          autocomplete="on" rel="external noopener noreferrer" onsubmit="return validateForm()">
+          <!-- use an onsubmit attribute to call a JavaScript function that validates the form before submission -->
+          <fieldset>
+            <legend>Contact Information</legend>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required placeholder="John Doe" aria-required="true" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required placeholder="john.doe@example.com"
+                aria-required="true" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"
+                aria-describedby="phone-format" />
+              <span id="phone-format" class="help-text">Format: 123-456-7890</span>
+            </div>
+            <div class="form-group">
+              <label for="attachment">Attachment:</label>
+              <input type="file" id="attachment" name="attachment" accept=".pdf,.doc,.docx" />
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Message Details</legend>
+            <div class="form-group">
+              <label for="subject">Subject:</label>
+              <select id="subject" name="subject" required aria-required="true">
+                <option value="" disabled selected hidden>
+                  Please select a subject
+                </option>
+                <option value="feedback">Feedback</option>
+                <option value="inquiry">Inquiry</option>
+                <option value="complaint">Complaint</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" cols="50" required placeholder="Your message here"
+                aria-required="true"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="captcha">Please enter the text below:</label>
+              <img src="/captcha.png?refresh=1" alt="A captcha image with some distorted text" />
+              <!-- use a query string parameter to make the captcha image refreshable -->
+              <button type="button" onclick="refreshCaptcha()">Refresh</button>
+              <!-- use a button element with a type=button and an onclick attribute to call a JavaScript function that refreshes the captcha image -->
+              <input type="text" id="captcha" name="captcha" required />
+              <!-- use a custom attribute to store the correct answer of the captcha -->
+              <!-- use a hidden input for the honeypot technique -->
+            </div>
+          </fieldset>
+          <!-- use a div element with a class attribute to group the form actions -->
+          <!-- use a button element with a type=submit for the submit button -->
+          <!-- use a button element with a type=reset for the reset button -->
+          <!-- use an output element to display a confirmation message after the form is submitted -->
+        </form>
+      </article>
 
-    <footer id="contact">
-      <h2>Contact Us</h2>
-      <p>
-        If you have any questions or feedback, please feel free to contact us
-        using the form below. We will get back to you as soon as possible.
-      </p>
-      <form action="submit.php" method="POST">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+      <!-- close all tags properly -->
+    </main>
+    <script src="js/vendor/modernizr-3.12.0.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Send</button>
-      </form>
-    </footer>
-
-    <!-- Some other HTML tags that are not used yet -->
-
-    <!-- Audio -->
-    <audio controls>
-      <source src="malaysia.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
-
-    <!-- Video -->
-    <video width="320" height="240" controls>
-      <source src="malaysia.mp4" type="video/mp4" />
-      Your browser does not support the video element.
-    </video>
-
-    <!-- Map -->
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15935.096176316403!2d101.68685475!3d3.1390030000000003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc36d0415ca539%3A0x400f7aca9c87b40!2sKuala%20Lumpur%2C%20Federal%20Territory%20of%20Kuala%20Lumpur%2C%20Malaysia!5e0!3m2!1sen!2sus!4v1639567229348!5m2!1sen!2sus"
-      width="600"
-      height="450"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-    ></iframe>
-  </body>
 </html>
